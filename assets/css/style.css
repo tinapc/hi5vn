@@ -1,0 +1,76 @@
+/*
+* Style for hi5Vietnam version 0.1
+* Author: Hung Nguyen
+* Create dated: 7/7/2014
+*/
+
+@import "./reset.css";
+@import "./color.css";
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+	/*text-shadow: 0 2px 5px #ddd;*/
+	overflow-x: hidden;
+	height: 100%;
+}
+
+
+/*---------------HEADER---------------*/
+.header{
+	background: #004074;
+	height: 40px;
+	color:#fff;
+
+}
+.logo {
+	padding-top: 0px;
+}
+
+.logo img{max-width: 35px;}
+.logo span {
+	font-size: 14px;
+}
+
+.social-header li {
+	display: inline-block;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-right: 1px solid #ddd;
+	line-height: 40px;
+	cursor: pointer;
+	position: relative;
+}
+
+.social-header li:hover .pop-on-top{
+	display: block;
+}
+
+
+.right-header .hasDrop {
+	display: inline;
+}
+
+.pop-on-top{
+	position: absolute;
+	left: 0;
+	background: #f2f2f2;
+	padding: 15px;
+	border: 1px solid #ddd;
+	display: none;
+	z-index: 999
+}
+
+.pop-account{
+	width: 280px;
+	left: -4px;
+}
+
+
+/*-------------HERO BANNER-------------*/
+#hero-banner{
+	min-height: 400px;
+	background: url(../img/banner1.jpg);
+	background-size: cover;
+}
