@@ -1,14 +1,5 @@
 .navbar{margin-bottom: 0; border:none;}
 .navbar-default {
-	/*background-image: linear-gradient(to bottom, #428BCA 0px, #2D6CA2 100%);
-	background-image: -webkit-linear-gradient(top,#428bca 0,#2d6ca2 100%);
-	background-image: -o-linear-gradient(top,#428bca 0,#2d6ca2 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff428bca', endColorstr='#ff2d6ca2', GradientType=0);
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-	background-repeat: repeat-x;
-	border-color: #2b669a;
-	border-radius:0;
-	border:none;*/
 	background: #fff !important;
 }
 
@@ -17,6 +8,6 @@
 	font-size: 15px;
 }
 
-
-/*------Style for link -----*/
-a:link{text-decoration: none ; color:#fff;}
+a:link, a:hover {
+	text-decoration: none
+}

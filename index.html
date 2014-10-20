@@ -1,8 +1,8 @@
 <!doctype html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if lt IE 7]> <body class="no-js ie9 ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <body class="no-js ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <body class="no-js ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <body class="no-js" lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,7 +53,7 @@
 
 		<!--Jquery Lib include-->
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-		
+
 
         <!--[if lt IE 9]> HTML5Shiv
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -139,6 +139,16 @@
 		            <li><a href="#">One more separated link</a></li>
 		          </ul>
 		        </li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shopping <span class="caret"></span></a>
+		          <ul class="dropdown-menu" role="menu">
+		            <li><a href="#">Bar</a></li>
+		            <li><a href="#">Coffe</a></li>
+		            <li><a href="#">Tour</a></li>
+		            <li><a href="#">Entertaiment</a></li>
+		            
+		          </ul>
+		        </li>
 		      </ul>
 		      <form class="navbar-form navbar-right" role="search">
 		        <div class="input-group">
@@ -153,7 +163,458 @@
 		</nav>
 
 		<section id="hero-banner">
-			
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10">
+						<div class="box-search bgOpacity">
+							<div class="col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="javascript:void(0)"><i class="fa fa-bus"></i> Hotels</a></li>
+									<li><a href="javascript:void(0)"><i class="fa fa-car"></i> Cars</a></li>
+									<li><a href="javascript:void(0)"><i class="fa fa-car"></i> Restaurant</a></li>
+									<li><a href="javascript:void(0)"><i class="fa fa-car"></i> Tours</a></li>
+								</ul>
+							</div>
+							<div class="col-md-9">
+								<div id="form-hotel">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+											    <label class="control-label">Going to</label>
+												<i class="fa fa-map-marker insideInput"></i>
+												<input type="text" class="form-control hasPaddingLeft" placeholder="City, Place,...">
+												
+											</div>	
+										</div>	
+									</div>
+									<div class="row">
+										<div class="form-group col-xs-3">
+										    <label class="control-label">Check In</label>
+											<i class="fa fa-calendar insideInput" style="left:10px; top:32px;"></i>
+											<input type="text" class="form-control hasPaddingLeft" placeholder="mm/dd/yyyy">
+										</div>
+										<div class="form-group col-xs-3">
+										    <label class="control-label">Check Out</label>
+											<i class="fa fa-calendar insideInput" style="left:10px; top:32px;"></i>
+											<input type="text" class="form-control hasPaddingLeft" placeholder="mm/dd/yyyy">
+										</div>
+									</div>
+
+									<a href="#" class="btn btn-primary">SEARCH</a>
+
+								</div>
+								<div id="form-car"></div>
+								<div id="form-restaurant"></div>
+								<div id="form-tour"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 bgOpacity adv-top-right">
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<h2 class="cat-title">new photos in Ha Noi</h2>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">Book Great Hotel and Vacation Deals to Mexico!</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">The great tour</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">Book Great Hotel and Vacation Deals to Mexico!</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">Book Great Hotel and Vacation Deals to Mexico!</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<h2 class="cat-title">popular place interest in Ha Noi</h2>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">Book Great Hotel and Vacation Deals to Mexico!</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">The great tour</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">Book Great Hotel and Vacation Deals to Mexico!</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">Book Great Hotel and Vacation Deals to Mexico!</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">Book Great Hotel and Vacation Deals to Mexico!</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">The great tour</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">Book Great Hotel and Vacation Deals to Mexico!</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">Book Great Hotel and Vacation Deals to Mexico!</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<h2 class="cat-title">new interest in Ha Noi</h2>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">Book Great Hotel and Vacation Deals to Mexico!</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">The great tour</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">Book Great Hotel and Vacation Deals to Mexico!</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">Book Great Hotel and Vacation Deals to Mexico!</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">Book Great Hotel and Vacation Deals to Mexico!</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">The great tour</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">Book Great Hotel and Vacation Deals to Mexico!</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="post-item">
+							<div class="post-thumb">
+								<img src="sources/post_thumb.jpg" alt="" class="img-responsive">
+							</div>
+							<div class="post-intro">
+								<p><a href="" class="title-post">Book Great Hotel and Vacation Deals to Mexico!</a></p>
+								<div class="social">
+									<a href="#"><i class="fa fa-eye"></i> 50 Views</a>
+									<a href="#"><i class="fa fa-comment"></i> 50 Comments</a>
+									<a href="#"><i class="fa fa-facebook"></i> 50 Shares</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="guides">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<h1>guide tour</h1>
+						<h4>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+						</h4>
+					</div>
+					<div class="col-md-8">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="img-guide">
+									<img src="sources/post_thumb.jpg" alt="" class="img-responsive"/>
+								</div>
+								<a href="" class="title-guide">
+									one-on-one planning services
+									<span>
+										Our Travel Insiders have in-depth destination knowledge and will design a customized trip itinerary with your passions and personal interests in mind.
+									</span>
+								</a>
+									
+							</div>
+							<div class="col-md-4">
+								<div class="img-guide">
+									<img src="sources/post_thumb.jpg" alt="" class="img-responsive"/>
+								</div>
+								<a href="" class="title-guide">
+									one-on-one planning services
+									<span>
+										Our Travel Insiders have in-depth destination knowledge and will design a customized trip itinerary with your passions and personal interests in mind.
+									</span>
+								</a>
+							</div>
+							<div class="col-md-4">
+								<div class="img-guide">
+									<img src="sources/post_thumb.jpg" alt="" class="img-responsive"/>
+								</div>
+								<a href="" class="title-guide">
+									one-on-one planning services
+									<span>
+										Our Travel Insiders have in-depth destination knowledge and will design a customized trip itinerary with your passions and personal interests in mind.
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="nav nav-pills text-center">
+							<li><a href="">Home</a></li>
+							<li><a href="">About us</a></li>
+							<li><a href="">Hotel</a></li>
+							<li><a href="">Restaurant</a></li>
+							<li><a href="">Shopping</a></li>
+							<li><a href="">Contact us</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>Copyright &copy 2014 by hi5Vietnam. All rights reserved</p>
+					</div>
+				</div>
+			</div>
 		</section>
 
 	    <!-- Latest compiled and minified JavaScript -->
