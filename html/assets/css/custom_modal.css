@@ -1,0 +1,90 @@
+/*======RESET MODAL
+=========================*/
+.modal-content{
+	border-radius: 0px;
+}
+
+.modal-title .pull-right{
+	font-size: 12px;
+	margin-top: 2px;
+}
+
+.modal-title .pull-right a{
+	color: #fff;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+.my-modal{}
+
+.my-modal .modal-header{
+	font-size: 16px;
+	background: #1A7AD9;
+	color: #fff;
+	padding: 10px 15px;
+}
+
+.ml-login{}
+.ml-login p,
+.ml-login .row
+{
+	margin: 5px 0;
+}
+
+.ml-login .col-md-6{
+	padding: 0px;
+}
+
+.ml-login .fg_pw{
+	line-height: 20px;
+}
+
+.ml-register .line {
+	height: 1px;
+	border-bottom: 1px solid #f2f2f2;
+	margin-top: 20px; margin-bottom: 20px;
+	position: relative;
+	text-align: center;
+}
+
+.ml-register .line span {
+	position: absolute;
+	background: #fff;
+	padding: 2px 20px;
+	left: 40%;
+	top: -10px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.ml-register .control-label {
+	text-align: left;
+	font-size: 12px;
+}
+
+.ml-register .form-group{
+	margin-bottom: 10px;
+}
+
+.ml-register input.form-control {
+	height: 25px;
+	font-size: 12px;
+	border-radius: 2px;
+}
+
+.ml-register select.form-control{
+	display: inline-block;
+	width: auto;
+	height: 25px;
+	padding: 0px;
+	font-size: 12px;
+	border-radius: 2px;
+}
+
+.ml-register .modal-footer {
+	padding: 5px;
+	text-align: center;
+	border-top: 1px solid #e5e5e5;
+	font-size: 11px;
+	line-height: 16px;
+}

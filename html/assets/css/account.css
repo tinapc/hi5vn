@@ -1,0 +1,51 @@
+/** Avatar **/
+#profile-page .account-avatar .img-circle {
+	background-color: #fff;
+	padding: 5px;
+	margin: 15px 0px;
+}
+
+#profile-page .account-avatar{
+	position: relative;
+}
+
+#profile-page .account-avatar .btn-change-avatar{
+	position: absolute;
+	left: 70px;
+	bottom: 60px;
+	border-radius: 3px;
+	/*display: none;*/
+	z-index: 9999;
+}
+
+/*#profile-page .account-avatar img:hover #profile-page .account-avatar .btn-change-avatar {
+	display: block;
+}*/
+
+
+#profile-page .account-name{
+	margin-top: 20px;
+	font-size: 30px;
+	color: #fff;
+	text-shadow: 2px 2px 5px #333;
+}
+
+/** Drop down menu **/
+#profile-page .dropdown-menu {
+	min-width: 250px;
+	border-radius:0px;
+}
+
+#profile-page .toolbar-account .nav-pills>li>a {
+	border-radius:0px;
+}
+
+#profile-page .toolbar-account .nav>li>a {
+	padding: 15px 25px;
+	border-right: 1px solid #e9eaed;
+	font-size: 14px;
+}
+
+#profile-page .toolbar-account .nav-pills>li+li{
+	margin-left: 0px;
+}
