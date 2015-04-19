@@ -1,0 +1,201 @@
+[
+    {
+        "name": "soqrate/tcpdf",
+        "version": "5.0.003",
+        "version_normalized": "5.0.003.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/soqrate/TCPDF.git",
+            "reference": "24598d9d7ea258acdb9462f5a5c3715317eca687"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/soqrate/TCPDF/zipball/24598d9d7ea258acdb9462f5a5c3715317eca687",
+            "reference": "24598d9d7ea258acdb9462f5a5c3715317eca687",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2013-12-05 16:45:06",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "fonts",
+                "config/lang",
+                "config",
+                "2dbarcodes.php",
+                "barcodes.php",
+                "htmlcolors.php",
+                "qrcode.php",
+                "tcpdf.php",
+                "unicode_data.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Nicola Asuni",
+                "email": "info@tecnick.com",
+                "homepage": "http://nicolaasuni.tecnick.com"
+            }
+        ],
+        "description": "TCPDF is a PHP class for generating PDF documents.",
+        "homepage": "http://www.tcpdf.org/",
+        "keywords": [
+            "TCPDF",
+            "pdf"
+        ]
+    },
+    {
+        "name": "soqrate/html2pdf",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/soqrate/HTML2PDF.git",
+            "reference": "78f8c1cc5f7ffeb13dee003099462a762ba1f880"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/soqrate/HTML2PDF/zipball/78f8c1cc5f7ffeb13dee003099462a762ba1f880",
+            "reference": "78f8c1cc5f7ffeb13dee003099462a762ba1f880",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2",
+            "soqrate/tcpdf": "5.0.003"
+        },
+        "time": "2013-12-09 10:44:01",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "HTML2PDF": "."
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Spipu",
+                "homepage": "http://sourceforge.net/users/spipu",
+                "role": "Developer"
+            },
+            {
+                "name": "Pierre Gasté",
+                "email": "p.gaste@soqrate.com",
+                "role": "Project manager"
+            },
+            {
+                "name": "Philippe Mossière",
+                "email": "p.mossiere@soqrate.com"
+            }
+        ],
+        "description": "HTML2PDF est un convertisseur de code HTML vers PDF",
+        "homepage": "http://html2pdf.fr",
+        "keywords": [
+            "conversion",
+            "convert",
+            "convertisseur",
+            "fpdf",
+            "generate",
+            "generation",
+            "html",
+            "pdf",
+            "php5"
+        ]
+    },
+    {
+        "name": "mikey179/vfsStream",
+        "version": "v1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mikey179/vfsStream.git",
+            "reference": "fc0fe8f4d0b527254a2dc45f0c265567c881d07e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mikey179/vfsStream/zipball/fc0fe8f4d0b527254a2dc45f0c265567c881d07e",
+            "reference": "fc0fe8f4d0b527254a2dc45f0c265567c881d07e",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2012-08-25 12:49:29",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "org\\bovigo\\vfs": "src/main/php"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD"
+        ],
+        "homepage": "http://vfs.bovigo.org/"
+    },
+    {
+        "name": "hybridauth/hybridauth",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/hybridauth/hybridauth.git",
+            "reference": "f45f46c1b6b18b7baf13360f3401f61859944d10"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/f45f46c1b6b18b7baf13360f3401f61859944d10",
+            "reference": "f45f46c1b6b18b7baf13360f3401f61859944d10",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "php": ">=5.2.0"
+        },
+        "time": "2015-04-12 16:36:51",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Hybrid": "hybridauth/"
+            },
+            "classmap": [
+                "hybridauth/Hybrid"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "(MIT or GPL-3.0+)"
+        ],
+        "authors": [
+            {
+                "name": "Miled",
+                "email": "hybridauth@gmail.com"
+            }
+        ],
+        "description": "Open source social sign on PHP library.",
+        "homepage": "http://hybridauth.sourceforge.net",
+        "keywords": [
+            "OpenId",
+            "facebook",
+            "google",
+            "hybridauth",
+            "login",
+            "oauth",
+            "social",
+            "twitter",
+            "yahoo"
+        ]
+    }
+]
