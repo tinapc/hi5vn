@@ -132,7 +132,7 @@ $config['subclass_prefix'] = 'MY_';
 | Note: This will NOT disable or override the CodeIgniter-specific
 |	autoloading (application/config/autoload.php)
 */
-$config['composer_autoload'] = FALSE;
+$config['composer_autoload'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
@@ -306,7 +306,7 @@ $config['cache_query_string'] = FALSE;
 | http://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'mJYjRV44c1Y6b22AFGmMeaHNIZmHLJAE';
 
 /*
 |--------------------------------------------------------------------------
@@ -453,7 +453,7 @@ $config['compress_output'] = FALSE;
 | helper' page of the user guide for information regarding date handling.
 |
 */
-$config['time_reference'] = 'local';
+$config['time_reference'] = 'Asia/Ho_Chi_Minh';
 
 /*
 |--------------------------------------------------------------------------
@@ -485,3 +485,12 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+/*
+|---------------------------------------------------------------------------
+|	HMVC Config
+|---------------------------------------------------------------------------
+*/
+$config['modules_locations'] = array(
+    APPPATH.'modules/' => '../modules/',
+);

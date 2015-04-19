@@ -1,5 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
 
+
 class Posts extends CI_Controller
 {
 	public function __construct()
@@ -8,12 +9,13 @@ class Posts extends CI_Controller
 	}
 	
 	public function index()
-	{
-		// $this->load->model('posts_model');
+    {
+		$this->load->model('Posts_model');
 		// $data['content'] = $this->posts_model->get_all();
 		// $this->load->view('posts_view', $data);
-		$posts = $this->db->get_where('posts', ['id' => '1'])->row_array();
-		var_dump($posts);
+		// $posts = $this->Posts_model->get();
+        $user = $this->Posts_model->fields('user_name, email')->as_array()->get(1);
+        var_dump($user);
 	}
 		
 	public function get($id)
@@ -22,7 +24,7 @@ class Posts extends CI_Controller
 		if($id!=0)
 		{
 			$this->load->model('posts_model');
-			$data['content'] = $this->posts_model->get($id);
+			$data['content'] = $this->Posts_model->get($id);
 			$this->load->view('posts_view', $data);
 		}
 		else
@@ -43,7 +45,7 @@ class Posts extends CI_Controller
 		{
 			$field = $this->input->post('element');
 			$this->load->model('posts_model');
-			if($this->posts_model->add(array('field_name'=>$field)))
+			if($this->Posts_model->add(array('field_name'=>$field)))
 			{
 				$this->load->view('posts_success_page_view');
 			}
@@ -93,7 +95,7 @@ class Posts extends CI_Controller
 		if($id!=0)
 		{
 			$this->load->model('posts_model');
-			$data['content'] = $this->posts_model->delete();
+			$data['content'] = $this->Posts_model->delete();
 			$this->load->view('posts_view', $data);
 		}
 		else
@@ -102,5 +104,5 @@ class Posts extends CI_Controller
 		}
 	}
 }
-/* End of file '/Posts.php' */
-/* Location: ./application/controllers//Posts.php.php */
+/* End of file '/Posts_model.php' */
+/* Location: ./application/controllers//Posts_model.php.php */

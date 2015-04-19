@@ -1,5 +1,4 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
-
 /** how to extend MY_Model:
  *	class User_model extends MY_Model
  *	{

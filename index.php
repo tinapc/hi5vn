@@ -53,8 +53,17 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-echo $_SERVER['HTTP_HOST'];
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+$host = $_SERVER['HTTP_HOST'];
+
+switch ($host)
+{
+    case 'hi5vn.app':
+        define('ENVIRONMENT', 'development');
+        break;
+    default:
+        define('ENVIRONMENT', 'production');
+}
+
 
 /*
  *---------------------------------------------------------------
@@ -67,7 +76,7 @@ echo $_SERVER['HTTP_HOST'];
 switch (ENVIRONMENT)
 {
 	case 'development':
-		error_reporting(-1);
+		//error_reporting(-1);
 		ini_set('display_errors', 1);
 	break;
 
