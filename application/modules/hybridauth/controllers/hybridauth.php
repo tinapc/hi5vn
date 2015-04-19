@@ -20,9 +20,9 @@ class Hybridauth extends MX_Controller {
 	    $adapter = $hybridauth->authenticate('Facebook');
 	 	
 	    $user_profile = $adapter->getUserProfile();
-	    echo "<pre>";
-	    print_r($user_profile->displayName);
-	    echo "</pre>";	
+	    // echo "<pre>";
+	    // print_r($user_profile->displayName);
+	    // echo "</pre>";	
 	}
 
 }
