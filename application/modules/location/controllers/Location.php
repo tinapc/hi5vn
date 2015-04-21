@@ -5,10 +5,18 @@ class Location extends Public_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+
+		$this->load->model('interests_model');
+		$this->load->model('user/users_model');
 	}
 	public function index($location)
 	{
 		$data = [];
+
+		$this->db->limit(6);
+		$this->db->order_by('id', 'desc');
+		$data['top_places'] = $this->interests_model->where_location($location)->with('user')->get_all();
+
 		$data['location_fullname'] = $this->config->item('cityLists')[$location];
 		$data['location_url'] = base_url() . 'location/' .$location .'/';
 
@@ -31,6 +39,7 @@ class Location extends Public_Controller {
 	public function place($place)
 	{
 		$data = [];
+		$data['top_places'] = $this->interests_model->where_location($place)->with('user')->get_all();
 		$data['location_fullname'] = $this->config->item('cityLists')[$place];
 		$data['location_url'] = base_url() . 'location/' .$place .'/';
 
@@ -42,10 +51,11 @@ class Location extends Public_Controller {
 	public function place_detail($place, $entry)
 	{
 		$data = [];
+		$data['place'] = $this->interests_model->where_slug($entry)->with('user')->get();
 		$data['location_fullname'] = $this->config->item('cityLists')[$place];
 		$data['location_url'] = base_url() . 'location/' .$place .'/';
 
-		$this->template->title('Cafe Nui Da Tho Quang tại ' . $data['location_fullname'])
+		$this->template->title( $data['place']->name.' tại ' . $data['location_fullname'])
 				->set('data', $data)
 				->build('place_detail');
 	}

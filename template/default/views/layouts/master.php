@@ -29,7 +29,6 @@
 <!--Include Js Common-->
 <script type="text/javascript" src="/assets/js/interface.js"></script>
 <script src="/assets/js/common.js" type="text/javascript"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=weather"></script>
 
 <!-- Modal Login -->
 <div class="modal fade my-modal ml-login" id="ml-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"

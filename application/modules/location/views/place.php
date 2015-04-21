@@ -51,7 +51,7 @@
 
 						    <div class="nav navbar-nav navbar-right">
 					    		<ul class="nav navbar-nav">
-					    			<li><a href="location.html"><i class="fa fa-th"></i> All </a></li>
+					    			<li><a href="<?php echo $data['location_url']?>"><i class="fa fa-th"></i> All </a></li>
 					    			<li><a href="photos.html"><i class="fa fa-image"></i> Photos </a></li>
 					    			<li><a href="tips.html"><i class="fa fa-info-circle"></i> Tips </a></li>
 					    			<li><a href="questions.html"><i class="fa fa-question-circle"></i> Questions </a></li>
@@ -117,210 +117,32 @@
 				</div>
 
 				<div class="row" id="grid">
-					<div class="col-sm-3 col-md-3">
-						<div class="item place img-thumbnail">
-							<a href="<?php echo $data['location_url']?>place-detail/hoi-an-beach">
-								<img src="http://lorempixel.com/800/1024" class="img-responsive">
-								<div class="short">
-									<i class="fa fa-map-marker pull-right"></i>
-									<span>Da Nang beach</span>
-									<span class="desc">
-										Attraction 1 km from center of Da Nang
-									</span>
-								</div>
-								<div class="social">
-									<button class="btn btn-primary btn-sm">Share</button>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-3 col-md-3">
-						<div class="item place img-thumbnail">
-							<a href="<?php echo $data['location_url']?>place-detail/hoi-an-beach">
-								<img src="http://lorempixel.com/400/600" class="img-responsive">
-								<div class="short">
-									<i class="fa fa-map-marker pull-right"></i>
-									<span>Da Nang beach</span>
-									<span class="desc">
-										Attraction 1 km from center of Da Nang
-									</span>
-								</div>
-								<div class="social">
-									<button class="btn btn-primary btn-sm">Share</button>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-3 col-md-3">
-						<div class="item place img-thumbnail">
-							<a href="<?php echo $data['location_url']?>place-detail/hoi-an-beach">
-								<img src="http://lorempixel.com/700/500" class="img-responsive">
-								<div class="short">
-									<i class="fa fa-map-marker pull-right"></i>
-									<span>Da Nang beach</span>
-									<span class="desc">
-										Attraction 1 km from center of Da Nang
-									</span>
-								</div>
-								<div class="social">
-									<button class="btn btn-primary btn-sm">Share</button>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-3 col-md-3">
-						<div class="item place img-thumbnail">
-							<a href="<?php echo $data['location_url']?>place-detail/hoi-an-beach">
-								<img src="http://lorempixel.com/400/600" class="img-responsive">
-								<div class="short">
-									<i class="fa fa-map-marker pull-right"></i>
-									<span>Da Nang beach</span>
-									<span class="desc">
-										Attraction 1 km from center of Da Nang
-									</span>
-								</div>
-								<div class="social">
-									<button class="btn btn-primary btn-sm">Share</button>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-3 col-md-3">
-						<div class="item place img-thumbnail">
-							<a href="<?php echo $data['location_url']?>place-detail/hoi-an-beach">
-								<img src="http://lorempixel.com/400/600" class="img-responsive">
-								<div class="short">
-									<i class="fa fa-map-marker pull-right"></i>
-									<span>Da Nang beach</span>
-									<span class="desc">
-										Attraction 1 km from center of Da Nang
-									</span>
-								</div>
-								<div class="social">
-									<button class="btn btn-primary btn-sm">Share</button>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-3 col-md-3">
-						<div class="item place img-thumbnail">
-							<a href="<?php echo $data['location_url']?>place-detail/hoi-an-beach">
-								<img src="http://lorempixel.com/600/400" class="img-responsive">
-								<div class="short">
-									<i class="fa fa-map-marker pull-right"></i>
-									<span>Da Nang beach</span>
-									<span class="desc">
-										Attraction 1 km from center of Da Nang
-									</span>
-								</div>
-								<div class="social">
-									<button class="btn btn-primary btn-sm">Share</button>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-3 col-md-3">
-						<div class="item place img-thumbnail">
-							<a href="<?php echo $data['location_url']?>place-detail/hoi-an-beach">
-								<img src="http://lorempixel.com/800/1024" class="img-responsive">
-								<div class="short">
-									<i class="fa fa-map-marker pull-right"></i>
-									<span>Da Nang beach</span>
-									<span class="desc">
-										Attraction 1 km from center of Da Nang
-									</span>
-								</div>
-								<div class="social">
-									<button class="btn btn-primary btn-sm">Share</button>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-3 col-md-3">
-						<div class="item place img-thumbnail">
-							<a href="<?php echo $data['location_url']?>place-detail/hoi-an-beach">
-								<img src="http://lorempixel.com/400/600" class="img-responsive">
-								<div class="short">
-									<i class="fa fa-map-marker pull-right"></i>
-									<span>Da Nang beach</span>
-									<span class="desc">
-										Attraction 1 km from center of Da Nang
-									</span>
-								</div>
-								<div class="social">
-									<button class="btn btn-primary btn-sm">Share</button>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-3 col-md-3">
-						<div class="item place img-thumbnail">
-							<a href="<?php echo $data['location_url']?>place-detail/hoi-an-beach">
-								<img src="http://lorempixel.com/700/500" class="img-responsive">
-								<div class="short">
-									<i class="fa fa-map-marker pull-right"></i>
-									<span>Da Nang beach</span>
-									<span class="desc">
-										Attraction 1 km from center of Da Nang
-									</span>
-								</div>
-								<div class="social">
-									<button class="btn btn-primary btn-sm">Share</button>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-3 col-md-3">
-						<div class="item place img-thumbnail">
-							<a href="<?php echo $data['location_url']?>place-detail/hoi-an-beach">
-								<img src="http://lorempixel.com/400/600" class="img-responsive">
-								<div class="short">
-									<i class="fa fa-map-marker pull-right"></i>
-									<span>Da Nang beach</span>
-									<span class="desc">
-										Attraction 1 km from center of Da Nang
-									</span>
-								</div>
-								<div class="social">
-									<button class="btn btn-primary btn-sm">Share</button>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-3 col-md-3">
-						<div class="item place img-thumbnail">
-							<a href="<?php echo $data['location_url']?>place-detail/hoi-an-beach">
-								<img src="http://lorempixel.com/400/600" class="img-responsive">
-								<div class="short">
-									<i class="fa fa-map-marker pull-right"></i>
-									<span>Da Nang beach</span>
-									<span class="desc">
-										Attraction 1 km from center of Da Nang
-									</span>
-								</div>
-								<div class="social">
-									<button class="btn btn-primary btn-sm">Share</button>
-								</div>
-							</a>
-						</div>
-					</div>
-					<div class="col-sm-3 col-md-3">
-						<div class="item place img-thumbnail">
-							<a href="<?php echo $data['location_url']?>place-detail/hoi-an-beach">
-								<img src="http://lorempixel.com/600/400" class="img-responsive">
-								<div class="short">
-									<i class="fa fa-map-marker pull-right"></i>
-									<span>Da Nang beach</span>
-									<span class="desc">
-										Attraction 1 km from center of Da Nang
-									</span>
-								</div>
-								<div class="social">
-									<button class="btn btn-primary btn-sm">Share</button>
-								</div>
-							</a>
-						</div>
-					</div>
+
+					<?php if ( !empty($data['top_places'])) : ?>
+	                    <div class="row">
+	                        <?php foreach($data['top_places'] as $top_place) : ?>
+	                            <div class="col-sm-3 col-md-3">
+	                                <div class="item place img-thumbnail">
+	                                    <a href="<?php echo $data['location_url']?>place-detail/<?php echo $top_place->slug?>">
+	                                        <img src="/sources/travel2.jpg" class="img-responsive">
+
+	                                        <div class="short">
+	                                            <i class="fa fa-map-marker pull-right"></i>
+	                                            <span><?php echo $top_place->name?></span>
+	        											<span class="desc">
+	        												Attraction 1 km from center of Da Nang
+	        											</span>
+	                                        </div>
+	                                        <div class="social">
+	                                            <button class="btn btn-primary btn-sm">Share</button>
+	                                        </div>
+	                                    </a>
+	                                </div>
+	                            </div>
+	                        <?php endforeach ?>
+	                    </div>
+	                <?php endif ?>
+
 				</div>
 			</div>
 		</div>

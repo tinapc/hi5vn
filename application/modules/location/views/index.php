@@ -131,118 +131,30 @@
             <div class="col-md-12">
                 <h2 class="cat_title">Top Place Interest</h2>
 
-                <div class="row">
-                    <div class="col-sm-4 col-md-4">
-                        <div class="item place img-thumbnail">
-                            <a href="detail-place.html">
-                                <img src="/sources/travel2.jpg" class="img-responsive">
+                <?php if ( !empty($data['top_places'])) : ?>
+                    <div class="row">
+                        <?php foreach($data['top_places'] as $top_place) : ?>
+                            <div class="col-sm-4 col-md-4">
+                                <div class="item place img-thumbnail">
+                                    <a href="<?php echo $data['location_url']?>place-detail/<?php echo $top_place->slug?>">
+                                        <img src="/sources/travel2.jpg" class="img-responsive">
 
-                                <div class="short">
-                                    <i class="fa fa-map-marker pull-right"></i>
-                                    <span>Da Nang beach</span>
-											<span class="desc">
-												Attraction 1 km from center of Da Nang
-											</span>
+                                        <div class="short">
+                                            <i class="fa fa-map-marker pull-right"></i>
+                                            <span><?php echo $top_place->name?></span>
+        											<span class="desc">
+        												Attraction 1 km from center of Da Nang
+        											</span>
+                                        </div>
+                                        <div class="social">
+                                            <button class="btn btn-primary btn-sm">Share</button>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="social">
-                                    <button class="btn btn-primary btn-sm">Share</button>
-                                </div>
-                            </a>
-                        </div>
+                            </div>
+                        <?php endforeach ?>
                     </div>
-                    <div class="col-sm-4 col-md-4">
-                        <div class="item place img-thumbnail">
-                            <a href="detail-place.html">
-                                <img src="/sources/pic4.jpg" class="img-responsive">
-
-                                <div class="short">
-                                    <i class="fa fa-map-marker pull-right"></i>
-                                    <span>Bla bla bla bla </span>
-											<span class="desc">
-												Attraction 1 km from center of Da Nang
-											</span>
-                                </div>
-                                <div class="social">
-                                    <button class="btn btn-primary btn-sm">Share</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-md-4">
-                        <div class="item place img-thumbnail">
-                            <a href="detail-place.html">
-                                <img src="/sources/pic1.jpg" class="img-responsive">
-
-                                <div class="short">
-                                    <i class="fa fa-map-marker pull-right"></i>
-                                    <span>Da Nang beach</span>
-											<span class="desc">
-												Attraction 1 km from center of Da Nang
-											</span>
-                                </div>
-                                <div class="social">
-                                    <button class="btn btn-primary btn-sm">Share</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 col-md-4">
-                        <div class="item place img-thumbnail">
-                            <a href="detail-place.html">
-                                <img src="/sources/travel2.jpg" class="img-responsive">
-
-                                <div class="short">
-                                    <i class="fa fa-map-marker pull-right"></i>
-                                    <span>Da Nang beach</span>
-											<span class="desc">
-												Attraction 1 km from center of Da Nang
-											</span>
-                                </div>
-                                <div class="social">
-                                    <button class="btn btn-primary btn-sm">Share</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-md-4">
-                        <div class="item place img-thumbnail">
-                            <a href="detail-place.html">
-                                <img src="/sources/pic4.jpg" class="img-responsive">
-
-                                <div class="short">
-                                    <i class="fa fa-map-marker pull-right"></i>
-                                    <span>Bla bla bla bla </span>
-											<span class="desc">
-												Attraction 1 km from center of Da Nang
-											</span>
-                                </div>
-                                <div class="social">
-                                    <button class="btn btn-primary btn-sm">Share</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-md-4">
-                        <div class="item place img-thumbnail">
-                            <a href="detail-place.html">
-                                <img src="/sources/pic1.jpg" class="img-responsive">
-
-                                <div class="short">
-                                    <i class="fa fa-map-marker pull-right"></i>
-                                    <span>Da Nang beach</span>
-											<span class="desc">
-												Attraction 1 km from center of Da Nang
-											</span>
-                                </div>
-                                <div class="social">
-                                    <button class="btn btn-primary btn-sm">Share</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <?php endif ?>
 
                 <div class="clearfix"></div>
                 <h2 class="cat_title">New Photo</h2>

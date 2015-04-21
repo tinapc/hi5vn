@@ -57,7 +57,7 @@
     <link rel="stylesheet" href="/assets/css/custom_responsive.css">
     <!--Jquery Lib include-->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
 
     <!--[if lt IE 9]> HTML5Shiv
     <script src="./assets/js/html5shiv.min.js"></script>
