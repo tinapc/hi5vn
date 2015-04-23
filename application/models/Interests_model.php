@@ -9,6 +9,7 @@ class Interests_model extends MY_Model {
 		
 		parent::__construct();
 	}
+
 }
 
 /* End of file Interests_m.php */

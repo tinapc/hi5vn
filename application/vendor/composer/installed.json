@@ -151,19 +151,19 @@
         "source": {
             "type": "git",
             "url": "https://github.com/hybridauth/hybridauth.git",
-            "reference": "f45f46c1b6b18b7baf13360f3401f61859944d10"
+            "reference": "0d3d9d339e145d119ca490e5f78e00a421dd5da6"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/f45f46c1b6b18b7baf13360f3401f61859944d10",
-            "reference": "f45f46c1b6b18b7baf13360f3401f61859944d10",
+            "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/0d3d9d339e145d119ca490e5f78e00a421dd5da6",
+            "reference": "0d3d9d339e145d119ca490e5f78e00a421dd5da6",
             "shasum": ""
         },
         "require": {
             "ext-curl": "*",
             "php": ">=5.2.0"
         },
-        "time": "2015-04-12 16:36:51",
+        "time": "2015-04-13 14:20:33",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -196,6 +196,68 @@
             "social",
             "twitter",
             "yahoo"
+        ]
+    },
+    {
+        "name": "socloz/geocoder",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/SoCloz/Geocoder.git",
+            "reference": "f757603cf1c2a0f42892a57c42c393bae0177c97"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/SoCloz/Geocoder/zipball/f757603cf1c2a0f42892a57c42c393bae0177c97",
+            "reference": "f757603cf1c2a0f42892a57c42c393bae0177c97",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "require-dev": {
+            "guzzle/guzzle": "*",
+            "kriswallsmith/buzz": "*",
+            "zendframework/zend-http": "*"
+        },
+        "suggest": {
+            "ext-curl": "Enabling the curl extension allows you to use CurlHttpAdapter.",
+            "guzzle/guzzle": "Enabling Guzzle allows you to use the GuzzleHttpAdapter.",
+            "kriswallsmith/buzz": "Enabling Buzz allows you to use the BuzzHttpAdapter, it's the recommended HTTP layer.",
+            "zendframework/zend-http": "Enabling Zend_Http allows you to use the ZendHttpAdapter"
+        },
+        "time": "2012-12-03 17:43:20",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Geocoder": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "William Durand",
+                "email": "william.durand1@gmail.com",
+                "homepage": "http://www.willdurand.fr"
+            }
+        ],
+        "description": "The almost missing Geocoder PHP 5.3 library.",
+        "homepage": "http://geocoder-php.org",
+        "keywords": [
+            "abstraction",
+            "geocoder",
+            "geocoding",
+            "geoip"
         ]
     }
 ]

@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cdb3e58e9851b3d96a86fa9e8b39cb01",
+    "hash": "b4b2e735cc473f64e2528ce47867e7fa",
     "packages": [
         {
             "name": "soqrate/html2pdf",
@@ -123,12 +123,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/hybridauth/hybridauth.git",
-                "reference": "f45f46c1b6b18b7baf13360f3401f61859944d10"
+                "reference": "0d3d9d339e145d119ca490e5f78e00a421dd5da6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/f45f46c1b6b18b7baf13360f3401f61859944d10",
-                "reference": "f45f46c1b6b18b7baf13360f3401f61859944d10",
+                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/0d3d9d339e145d119ca490e5f78e00a421dd5da6",
+                "reference": "0d3d9d339e145d119ca490e5f78e00a421dd5da6",
                 "shasum": ""
             },
             "require": {
@@ -167,7 +167,7 @@
                 "twitter",
                 "yahoo"
             ],
-            "time": "2015-04-12 16:36:51"
+            "time": "2015-04-13 14:20:33"
         },
         {
             "name": "mikey179/vfsStream",
@@ -198,13 +198,74 @@
             ],
             "homepage": "http://vfs.bovigo.org/",
             "time": "2012-08-25 12:49:29"
+        },
+        {
+            "name": "socloz/geocoder",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SoCloz/Geocoder.git",
+                "reference": "f757603cf1c2a0f42892a57c42c393bae0177c97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SoCloz/Geocoder/zipball/f757603cf1c2a0f42892a57c42c393bae0177c97",
+                "reference": "f757603cf1c2a0f42892a57c42c393bae0177c97",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "guzzle/guzzle": "*",
+                "kriswallsmith/buzz": "*",
+                "zendframework/zend-http": "*"
+            },
+            "suggest": {
+                "ext-curl": "Enabling the curl extension allows you to use CurlHttpAdapter.",
+                "guzzle/guzzle": "Enabling Guzzle allows you to use the GuzzleHttpAdapter.",
+                "kriswallsmith/buzz": "Enabling Buzz allows you to use the BuzzHttpAdapter, it's the recommended HTTP layer.",
+                "zendframework/zend-http": "Enabling Zend_Http allows you to use the ZendHttpAdapter"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Geocoder": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William Durand",
+                    "email": "william.durand1@gmail.com",
+                    "homepage": "http://www.willdurand.fr"
+                }
+            ],
+            "description": "The almost missing Geocoder PHP 5.3 library.",
+            "homepage": "http://geocoder-php.org",
+            "keywords": [
+                "abstraction",
+                "geocoder",
+                "geocoding",
+                "geoip"
+            ],
+            "time": "2012-12-03 17:43:20"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
         "soqrate/html2pdf": 20,
-        "hybridauth/hybridauth": 20
+        "hybridauth/hybridauth": 20,
+        "socloz/geocoder": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

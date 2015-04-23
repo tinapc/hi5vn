@@ -1,33 +1,4 @@
-<section id="hero-banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center general_info_location">
-                <h1>Welcome to <?php echo $data['location_fullname']?></h1>
-
-                <div>
-                    <ul class="list-inline">
-                        <li>
-                            <i class="fa fa-map-marker"></i>
-                            <span>2000</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-home"></i>
-                            <span>2000</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-camera"></i>
-                            <span>2000</span>
-                        </li>
-                        <li>
-                            <i class="fa fa-info-circle"></i>
-                            <span>500</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php echo modules::run('location/widget_bannerLocation')?>
 <div id="main-nav">
     <div class="container">
         <div class="row">
@@ -137,7 +108,7 @@
                             <div class="col-sm-4 col-md-4">
                                 <div class="item place img-thumbnail">
                                     <a href="<?php echo $data['location_url']?>place-detail/<?php echo $top_place->slug?>">
-                                        <img src="/sources/travel2.jpg" class="img-responsive">
+                                        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=<?=$top_place->photo?>&key=<?=$this->config->item('google_place_api_key')?>" class="img-responsive">
 
                                         <div class="short">
                                             <i class="fa fa-map-marker pull-right"></i>

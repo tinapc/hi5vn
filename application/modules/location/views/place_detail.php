@@ -35,35 +35,9 @@
 	}
 	google.maps.event.addDomListener(window, 'load', initialize);
 </script>
-<section id="hero-banner">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center general_info_location">
-						<h1>Welcome to Da Nang</h1>
-						<div>
-							<ul class="list-inline">
-								<li>
-									<i class="fa fa-map-marker"></i>
-									<span>2000</span>
-								</li>
-								<li>
-									<i class="fa fa-home"></i>
-									<span>2000</span>
-								</li>
-								<li>
-									<i class="fa fa-camera"></i>
-									<span>2000</span>
-								</li>
-								<li>
-									<i class="fa fa-info-circle"></i>
-									<span>500</span>
-								</li>
-							</ul>
-						</div>
-					</div>	
-				</div>
-			</div>
-		</section>
+
+<?php echo modules::run('location/widget_bannerLocation')?>
+
 		<div id="main-nav">
 			<div class="container">
 				<div class="row">
@@ -214,7 +188,7 @@
 								<div class="author-name pull-left">
 									<span>Posted by </span><a href="profile/messi.html"><?php echo $data['place']->user->displayName?></a> 
 									<div class="clearfix"></div>
-									<span class="posted-date">2 days ago <i class="fa fa-clock-o"></i> </span>
+									<span class="posted-date"><?php echo $this->util->timeAgo(strtotime($data['place']->created_at))?> <i class="fa fa-clock-o"></i> </span>
 								</div>
 								<div class="clearfix"></div>
 								<p class="post-social text-center" style="margin-top: 20px; border-top: 1px solid #ccc; padding-top: 20px; border-bottom:0px;"> 

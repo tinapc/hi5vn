@@ -8,6 +8,7 @@
 	},
 	"require-dev": {
 		"mikey179/vfsStream": "1.1.*",
-		"hybridauth/hybridauth": "dev-master"
+		"hybridauth/hybridauth": "dev-master",
+		"socloz/geocoder": "1.1.*@dev"
 	}
 }

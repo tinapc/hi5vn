@@ -10,6 +10,8 @@ class Public_Controller extends MX_Controller {
 		// Load config app
 		$this->load->config('app');
 
+		$this->output->enable_profiler($this->config->item('debug'));
+
 		// Set general block for Master template
 		$this->template->set_partial('header', 'partial/header');
 	}

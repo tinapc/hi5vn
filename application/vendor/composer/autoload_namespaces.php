@@ -9,4 +9,5 @@ return array(
     'org\\bovigo\\vfs' => array($vendorDir . '/mikey179/vfsStream/src/main/php'),
     'Hybrid' => array($vendorDir . '/hybridauth/hybridauth/hybridauth'),
     'HTML2PDF' => array($vendorDir . '/soqrate/html2pdf'),
+    'Geocoder' => array($vendorDir . '/socloz/geocoder/src'),
 );
