@@ -1,0 +1,14 @@
+{
+	"description" : "The CodeIgniter framework",
+	"name" : "codeigniter/framework",
+	"license": "MIT",
+	"require": {
+		"php": ">=5.2.4",
+		"soqrate/html2pdf": "dev-master"
+	},
+	"require-dev": {
+		"mikey179/vfsStream": "1.1.*",
+		"hybridauth/hybridauth": "dev-master",
+		"socloz/geocoder": "1.1.*@dev"
+	}
+}

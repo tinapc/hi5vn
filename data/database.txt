@@ -1,0 +1,106 @@
+CREATE TABLE IF NOT EXISTS `interest` (
+  `interestid` int(11) NOT NULL AUTO_INCREMENT,
+  `userid` text,
+  `interestname` varchar(50),
+  `type` varchar(50),
+  `date` text
+  PRIMARY KEY (`interestid`)
+);
+
+CREATE TABLE IF NOT EXISTS `location` (
+  `locationid` int(11) NOT NULL AUTO_INCREMENT,
+  `userid` text,
+  `name` varchar(50),
+  `type` varchar(50),
+  `area` varchar(50),
+  `city` varchar(50),
+  `state` varchar(50),
+  `country` varchar(50),
+  `date` text
+  PRIMARY KEY (`locationid`)
+);
+
+
+CREATE TABLE IF NOT EXISTS `country` (
+  `countryid` int(11) NOT NULL AUTO_INCREMENT,
+  `countryname` text,
+  `type` text,
+  `code` text,
+  `description` text,
+  `icon` text NOT NULL,
+  `tag` text NOT NULL,
+  `symbol` text,
+  `parentid` text,
+  `level` text,
+  `date` text,
+  PRIMARY KEY (`countryid`)
+);
+
+
+CREATE TABLE IF NOT EXISTS `state` (
+  `stateid` int(11) NOT NULL AUTO_INCREMENT,
+  `countryid` text,
+  `statename` text,
+  `type` text,
+  `code` text,
+  `description` text,
+  `metro` text,
+  `city` text,
+  `town` text,
+  `icon` text NOT NULL,
+  `tag` text NOT NULL,
+  `symbol` text,
+  `parentid` text,
+  `level` text,
+  `date` text,
+  PRIMARY KEY (`stateid`)
+);
+
+
+CREATE TABLE IF NOT EXISTS `metro` (
+  `metroid` int(11) NOT NULL AUTO_INCREMENT,
+  `state` text,
+  `metroname` text,
+  `type` text,
+  `code` text,
+  `description` text,
+  `area` text,
+  `icon` text,
+  `tag` text,
+  `status` text,
+  `view` text,
+  `property` text,
+  `stateid` text,
+  `date` text,
+  PRIMARY KEY (`metroid`)
+);
+
+CREATE TABLE IF NOT EXISTS `city` (
+  `cityid` int(11) NOT NULL AUTO_INCREMENT,
+  `stateid` text,
+  `cityname` text,
+  `type` text,
+  `description` text,
+  `area` text,
+  `icon` text NOT NULL,
+  `tag` text NOT NULL,
+  `parentid` text,
+  `level` text,
+  `date` text,
+  PRIMARY KEY (`cityid`)
+);
+
+CREATE TABLE IF NOT EXISTS `area` (
+  `areaid` int(11) NOT NULL AUTO_INCREMENT,
+  `cityid` text,
+  `areaname` text,
+  `type` text,
+  `description` text,
+  `icon` text NOT NULL,
+  `tag` text NOT NULL,
+  `parentid` text,
+  `level` text,
+  `date` text,
+  PRIMARY KEY (`areaid`)
+);
+

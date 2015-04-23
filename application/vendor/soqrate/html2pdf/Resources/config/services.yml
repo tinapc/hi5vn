@@ -1,0 +1,13 @@
+parameters:
+    html2pdf.class: Soqrate\Html2PdfBundle\Service\Html2PdfManager
+    html2pdf.orientation: P
+    html2pdf.format: A4
+    html2pdf.language: en
+    html2pdf.unicode: true
+    html2pdf.encoding: 'UTF-8'
+    html2pdf.marges: [10,15,10,15]
+
+services:
+  html2pdf:
+    class:        %html2pdf.class%
+    arguments:    [%html2pdf.orientation%, %html2pdf.format%, %html2pdf.language%, %html2pdf.unicode%, %html2pdf.encoding%, %html2pdf.marges%]

@@ -1,0 +1,36 @@
+{
+    "name": "soqrate/html2pdf",
+    "type": "library",
+    "license": "LGPL",
+    "description": "HTML2PDF est un convertisseur de code HTML vers PDF",
+    "keywords": ["pdf","html","generation","convert","generate","convertisseur","conversion","html","php5","fpdf"],
+    "homepage": "http://html2pdf.fr",
+    "authors":
+    [
+        {
+            "name": "Spipu",
+            "homepage": "http://sourceforge.net/users/spipu",
+            "role": "Developer"
+        },
+        {
+            "name": "Pierre Gasté",
+            "email": "p.gaste@soqrate.com"
+        },
+        {
+            "name": "Philippe Mossière",
+            "email": "p.mossiere@soqrate.com"
+        }
+    ],
+    "require":
+    {
+        "php": ">=5.2",
+        "soqrate/tcpdf": "5.0.003"
+    },
+    "autoload":
+    {
+        "psr-0":
+        {
+            "HTML2PDF": "."
+        }
+    }
+}
